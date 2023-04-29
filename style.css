@@ -1,0 +1,747 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe ui';
+}
+/* ----------------------------NAVBAR------------------------------ */
+
+.navbar {
+    width: 100%;
+    padding-left: 20px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: rgb(163, 117, 2);
+    justify-content: space-around;
+}
+
+.nav-title h2 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.links {
+    font-size: 18px;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 10px 13px 10px;
+}
+
+.links a:hover {
+    background-color: rgb(190, 128, 12);
+}
+
+#hamburger {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .hamburgerMenu label {
+        display: inline-block;
+        cursor: pointer;
+        padding: 13px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .hamburgerMenu label:hover,
+    .navbar #hamburger:checked~.hamburgerMenu>label {
+        background-color: rgb(2, 163, 98);
+    }
+
+    .hamburgerMenu label div {
+        border-top: 2px solid #fff;
+        display: block;
+        height: 10px;
+        width: 25px;
+    }
+
+    .links {
+        border-top: 1px solid #e6a77d;
+        background-color: rgb(2, 163, 98);
+        transition: all 0.3s;
+        overflow-y: hidden;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 0px;
+        top: 50px;
+        left: 0px;
+    }
+
+    .links a {
+        display: block;
+        width: 100%;
+    }
+
+    #hamburger:not(:checked)~.links {
+        height: 0px;
+    }
+
+    #hamburger:checked~.links {
+        height: calc(100vh - 50px);
+    }
+}
+
+ /*-------------------- Head---------------------- */
+ .container{
+    background-color: white;
+    color: black;
+    position: relative;
+}
+
+.infocontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    margin: auto;
+    height: 160%;
+}
+.firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.myPic{
+    width: 30%;
+    padding: 1.5%;
+    margin-top: 10%;
+}
+.moreabout{
+    padding: 0 10px;    
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.hello , .name{
+    font-size: 34px;
+    padding: 2%;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bolder;
+
+}
+.about{
+    padding: 2%;
+    color:  rgb(2, 163, 98);   
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+.buttons{
+    padding: 3%;
+}
+.buttons .btn-1{
+    padding: 4px 20px;
+    margin: 7px 5px;
+    border: 2px solid rgb(2, 163, 98);
+    background: none;
+    cursor: pointer;
+}
+.buttons .btn-2{
+    padding: 4px 20px;
+    margin: 6px 0;
+    border: 2px solid  rgb(2, 163, 98);
+    background-color:  rgb(2, 163, 98);
+    color: white;
+    cursor: pointer;
+}
+.socialmedia{
+    justify-content: center;
+    margin-left: 40%;
+}
+.footer-0{
+    margin-top: 10%;
+}
+ /* -------------BIG CARDS-------------- */
+ .card-A,.card-B,.card-C{
+    padding-right: 2%;
+    padding-left:22%;
+    height: 47vh;
+    width: 70vw;
+    margin: auto;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+/* -------------------CARD A STYLING--------------Box 1,2---- */
+.card-A{
+    background-color:  rgb(2, 163, 98);
+    color: black;
+}
+
+.box-1{
+    float: left;
+    width: 67%;
+    padding: 0 10px;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px -145px;
+    text-align: left;
+}
+.box-2{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/330px-Cristiano_Ronaldo_2018.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    padding: 0 10px;
+    height: 40vh;
+    margin: -3px 317px;
+}
+.card-body-1 {
+  display: inline-block;
+  padding-right: 4%;
+  padding-left: 0%;
+  padding-top: 3%;
+  }
+
+/* BOX-1 STYLING */
+.card-title-1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px ;
+    padding: 5%;
+}
+.box-1 .card-text-1{
+    padding: 2%;
+}
+
+/* --------------------------Card B styling---------------BOX 3,4---------- */
+.card-B{
+    background-color: black;
+    color: white;
+}
+
+.box-3{
+    float: left;
+    width: 60%;
+    padding: 0 10px;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px -145px;
+    text-align: left;
+}
+.box-4{
+    background: url(https://www.simplylifeindia.com/uploads/8/1/1/5/8115412/published/muniba-mazari-motivational-speaker-simply-life-india-speakers-bureau.jpg?1613027468);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    padding: 0 10px;
+    height: 40vh;
+    margin: -3px 317px;
+}
+.card-body-2 {
+  display: inline-block;
+  padding-right: 4%;
+  padding-left: 0%;
+  padding-top: 3%;
+  }
+.card-title-2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px ;
+    padding: 5%;
+    margin-right:-10px ;
+}
+.card-text-2{
+    padding: 2%;
+}
+
+/* -------------------CARD C STYLING-------------Box 5,6----- */
+.card-C{
+    background-color: rgb(2, 163, 98);
+    color: black;
+}
+
+.box-5{
+    float: left;
+    width: 67%;
+    padding: 0 10px;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px -145px;
+    text-align: left;
+}
+.box-6{
+    background: url(https://www.ecured.cu/images/f/fb/ElonmuskeMe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    padding: 0 10px;
+    height: 40vh;
+    margin: -3px 317px;
+}
+.card-body-3 {
+  display: inline-block;
+  padding-right: 4%;
+  padding-left: 0%;
+  padding-top: 3%;
+  }
+.card-title-3{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px ;
+    padding: 5%;
+}
+.card-text-3{
+    padding: 2%;
+}
+
+/* ------------------FAVORITE CITIES-------------------  */
+.card-4,.card-5,.card-6{
+    padding-right: 2%;
+    padding-left:22%;
+    height: 47vh;
+    width: 70vw;
+    margin: auto;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+/* -------------------CARD 4 STYLING--------------Box 7,8---- */
+.card-4{
+    background-color: black;
+    color: white;
+}
+
+.box-7{
+    float: left;
+    width: 67%;
+    padding: 0 10px;
+    color: white;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px -145px;
+    text-align: left;
+}
+.box-8{
+    background: url(https://www.wildfrontierstravel.com/media/cache/page_image_large/upload/cc/46ddac20/Islamabad.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px 317px;
+}
+.card-body-a {
+  display: inline-block;
+  padding-right: 4%;
+  padding-left: 0%;
+  padding-top: 3%;
+  }
+
+.card-title-a{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px ;
+    padding: 5%;
+}
+.card-text-a{
+    padding: 2%;
+}
+.cd
+{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 500px;
+}
+/* --------------------------Card 5 styling---------------BOX 9,10---------- */
+.card-5{
+    background-color: rgb(2, 163, 98);
+    color: black;
+}
+
+.box-9{
+    float: left;
+    width: 60%;
+    padding: 0 10px;
+    color: black;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px -145px;
+    text-align: left;
+}
+.box-10{
+    background: url(https://dnd.com.pk/wp-content/uploads/2019/12/Shounter-Lake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px 317px;
+}
+.card-body-b {
+  display: inline-block;
+  padding-right: 4%;
+  padding-left: 0%;
+  padding-top: 3%;
+  }
+.card-title-b{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px ;
+    padding: 5%;
+    margin-right:-10px ;
+}
+.card-text-b{
+    padding: 2%;
+}
+
+/* -------------------CARD 6 STYLING-------------Box 11,12----- */
+.card-6{
+    background-color: black;
+    color: white;
+}
+
+.box-11{
+    float: left;
+    width: 67%;
+    padding: 0 10px;
+    color: white;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px -145px;
+    text-align: left;
+}
+.box-12{
+    background: url(http://industourism.pk/wp-content/uploads/2018/06/Masjid_Wazeer_Khan_Lahore.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px 317px;
+}
+.card-body-c {
+  display: inline-block;
+  padding-right: 4%;
+  padding-left: 0%;
+  padding-top: 3%;
+  }
+.card-title-c{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px ;
+    padding: 5%;
+}
+.card-text-c{
+    padding: 2%;
+}
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------FAVORITE TOURIST SPOTS--------------- */
+
+.card-7,.card-8,.card-9,.card-10,.card-11,.card-12{
+    padding-right: 2%;
+    padding-left:22%;
+    height: 47vh;
+    width: 70vw;
+    margin: auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+/* -------------------CARD 7 STYLING--------------Box a,b----body a1 */
+.card-7{
+    background-color: rgb(2, 163, 98);
+    color: black;
+}
+
+.box-a{
+    float: left;
+    width: 67%;
+    padding: 0 10px;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px -145px;
+    text-align: left;
+}
+.box-b{
+    background: url(https://www.natureadventureclub.pk/blog/wp-content/uploads/2019/10/hunza-16.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    padding: 0 10px;
+    height: 40vh;
+    margin: -3px 317px;
+}
+.card-body-a1 {
+  display: inline-block;
+  padding-right: 4%;
+  padding-left: 0%;
+  padding-top: 3%;
+  }
+
+.card-title-a1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px ;
+    padding: 5%;
+}
+.card-text-a1{
+    padding: 2%;
+}
+
+/* --------------------------Card 8 styling---------------BOX c,d-----body b1----- */
+.card-8{
+    background-color: black;
+    color: white;
+}
+
+.box-c{
+    float: left;
+    width: 60%;
+    padding: 0 10px;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px -145px;
+    text-align: left;
+}
+.box-d{
+    background: url(https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzL2YxYjBiZDUxLTllODQtNDkxNS05YWI0LTc0MjE1NDQ0OWY4YjJjNWI5ZDM1ZGMxOTEzN2EwOV9BdHRhYmFkX0xha2VfMy5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4PiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXV0/Attabad_Lake_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px 317px;
+}
+.card-body-b1 {
+  display: inline-block;
+  padding-right: 4%;
+  padding-left: 0%;
+  padding-top: 3%;
+  }
+.card-title-b1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px ;
+    padding: 5%;
+    margin-right:-10px ;
+}
+.card-text-b1{
+    padding: 2%;
+}
+
+/* -------------------CARD 9 STYLING-------------Box e,f body c1----- */
+.card-9{
+    background-color: rgb(2, 163, 98);
+    color: black;
+}
+
+.box-e{
+    float: left;
+    width: 67%;
+    padding: 0 10px;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px -145px;
+    text-align: left;
+}
+.box-f{
+    background: url(https://4.bp.blogspot.com/-KFtF3Fpavgo/TaVLnKDfuPI/AAAAAAAAAQA/nl0OyXpyJwU/s1600/swat+velley+%25281%2529.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px 317px;
+}
+.card-body-c1 {
+  display: inline-block;
+  padding-right: 4%;
+  padding-left: 0%;
+  padding-top: 3%;
+  }
+.card-title-c1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px ;
+    padding: 5%;
+}
+.card-text-c1{
+    padding: 2%;
+}
+
+/* -------------------CARD 10 STYLING-------------Box g,h body d1----- */
+.card-10{
+    background-color: black;
+    color: white;
+}
+
+.box-g{
+    float: left;
+    width: 67%;
+    padding: 0 10px;
+    color: white;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px -145px;
+    text-align: left;
+}
+.box-h{
+    background: url(https://tourmypakistan.com.pk/wp-content/uploads/2019/04/Saifulmalook-Naran-1024x683.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px 317px;
+}
+.card-body-d1 {
+  display: inline-block;
+  padding-right: 4%;
+  padding-left: 0%;
+  padding-top: 3%;
+  }
+.card-title-d1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px ;
+    padding: 5%;
+}
+.card-text-d1{
+    padding: 2%;
+}
+
+/* -----------------------CARD 11 STYLING-------------Box i,j body e1--------- */
+.card-11{
+    background-color: rgb(2, 163, 98);
+    color: black;
+}
+
+.box-i{
+    float: left;
+    width: 60%;
+    padding: 0 10px;
+    color: black;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px -145px;
+    text-align: left;
+}
+.box-j{
+    background: url(https://cdn.britannica.com/82/133582-050-1B2986D4/Badshahi-Mosque-Lahore-Pakistan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px 317px;
+}
+.card-body-e1 {
+  display: inline-block;
+  padding-right: 4%;
+  padding-left: 0%;
+  padding-top: 3%;
+  }
+.card-title-e1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px ;
+    padding: 5%;
+    margin-right:-10px ;
+}
+.card-text-e1{
+    padding: 2%;
+}
+
+/* ---------------CARD 12 STYLING-------------Box k,l body f1---- */
+.card-12{
+    background-color: black;
+    color: white;
+}
+
+.box-k{
+    float: left;
+    width: 67%;
+    padding: 0 10px;
+    color: white;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px -145px;
+    text-align: left;
+}
+.box-l{
+    background: url(https://www.pakistantravelguide.pk/wp-content/uploads/2016/03/neelum-valley.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+    height: 40vh;
+    font-family: 'Noto Sans', sans-serif;
+    margin: -3px 317px;
+}
+.card-body-f1{
+  display: inline-block;
+  padding-right: 4%;
+  padding-left: 0%;
+  padding-top: 3%;
+  }
+.card-title-f1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px ;
+    padding: 5%;
+}
+.card-text-f1{
+    padding: 2%;
+}
+/* ------------------CONTACT INFO--------------------------- */
+.contact_info{
+    padding-right: 2%;
+    padding-left:22%;
+    height: 47vh;
+    width: 70vw;
+    margin: auto;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+}
+
+.col{
+    padding: 2%;
+}
+.col-md-6,.col-12,.col-md-4,.col-md-2{
+    padding: 2%;
+}
+.footer-1{
+    margin-top: 18.5%;
+}
+
+
